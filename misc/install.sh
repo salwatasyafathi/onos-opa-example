@@ -18,7 +18,7 @@ function install-prereq {
 
     # Install Maven 3.3.9
     cd /usr/local
-    sudo wget http://archive.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
+    sudo wget http://archive.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz --no-check-certificate
     sudo tar xzf apache-maven-3.3.9-bin.tar.gz
     echo "export M2_HOME=/usr/local/apache-maven-3.3.9/" >> ~/.sfile
     echo "export MAVEN_HOME=/usr/local/apache-maven-3.3.9/" >> ~/.sfile
